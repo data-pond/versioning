@@ -6,6 +6,14 @@ Typically, a downloadable  installer, or a URL.
 
 # Repo structure:
 
-- [The smart contract itself](/packages/contracts_ar/README.md)
-- [The CLI](/packages/cli/README.md)  
-- [The Web Client](/packages/browser/README.md)
+It is a typescript monorepo, organized around the ESNext module methodology using [turbo](https://turbo.build/).
+
+- [The CLI Documentation](/packages/cli/README.md)  
+- [The Web Client Documentation](/packages/browser/README.md)
+- [The smart contract source code](/packages/contracts_ar/src/versions.ts)
+- [The versioning class source code](/packages/commons/src/index.ts)
+
+It publishes 2 npm packages:
+
+- [@datapond/ar-web3-versions](https://www.npmjs.com/package/@datapond/ar-web3-versions) for the CLI
+- [@datapond/ar-check-new-version](https://www.npmjs.com/package/@datapond/ar-check-new-version) for the Javascript client

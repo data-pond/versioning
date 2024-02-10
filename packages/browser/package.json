@@ -1,7 +1,7 @@
 {
   "name": "@datapond/ar-check-new-version",
-  "version": "0.1.1",
-  "description": "",
+  "version": "0.1.2",
+  "description": "Anonymously checks if a new version of your program has been deployed on the arweave blockchain",
   "main": "out/index.js",
   "files": [
     "out/web"
@@ -20,5 +20,6 @@
   },
   "devDependencies": {
     "@datapond/commons": "latest"
-  }
+  },
+  "repository": "https://github.com/data-pond/versioning"
 }

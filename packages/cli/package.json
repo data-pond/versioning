@@ -1,6 +1,6 @@
 {
   "name": "@datapond/ar-web3-versions",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "CLI to deploy a smart contract to the Arweave Blockchain for managing deployments and versioning",
   "bin": "./out/node/index.js",
   "sideEffects": false,
@@ -20,5 +20,6 @@
     "@datapond/commons": "latest"
   },
   "author": "DataPond ( https://datapond.earth )",
-  "license": "C Licence"
+  "license": "C Licence",
+  "repository": "https://github.com/data-pond/versioning"
 }
