@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "module": "esNext",
+    "target": "es2017",
+    "moduleResolution": "node",
+    "sourceMap": false,
+    "emitDecoratorMetadata": false,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "removeComments": true,
+    "noImplicitAny": true,
+    "declaration": true,
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "importHelpers": false,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "incremental": true,
+    "importsNotUsedAsValues": "preserve",
+    "composite": true,
+    "declarationMap": true,
+    "typeRoots": ["./node_modules/@types", "./types"]
+  }
+}

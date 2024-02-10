@@ -1,0 +1,16 @@
+{
+	"extends": "@datapond/config/typescript/tsconfig.node.json",
+	"compilerOptions": {
+		"rootDir": "./src",
+		"outDir": "./out",
+		"baseUrl": "."
+	},
+	"include": [
+		"src/**/*",
+		"__tests__/**/*"
+	],
+	"exclude": [
+		"**/node_modules",
+		"**/.*/"
+	]
+}

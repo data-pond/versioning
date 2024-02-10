@@ -1,0 +1,24 @@
+{
+  "name": "@datapond/ar-web3-versions",
+  "version": "0.1.10",
+  "description": "CLI to deploy a smart contract to the Arweave Blockchain for managing deployments and versioning",
+  "bin": "./out/node/index.js",
+  "sideEffects": false,
+  "type": "module",
+  "scripts": {
+    "build": "rm -rf out/node && node esbuild.js && npx add-shebang",
+    "check": "npx tsc --watch",
+    "lint": "npx eslint src/**/*.ts"
+  },
+  "dependencies": {
+    "commander": "^11.1.0",
+    "smartweave": "^0.4.49"
+
+  },
+  "devDependencies": {
+    "add-shebang": "^0.1.0",
+    "@datapond/commons": "latest"
+  },
+  "author": "DataPond ( https://datapond.earth )",
+  "license": "C Licence"
+}

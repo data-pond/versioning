@@ -1,0 +1,24 @@
+{
+  "name": "@datapond/ar-check-new-version",
+  "version": "0.1.1",
+  "description": "",
+  "main": "out/index.js",
+  "files": [
+    "out/web"
+  ],
+  "type": "module",
+  "scripts": {
+    "build": "rm -rf out && node esbuild.js",
+    "check": "npx tsc --watch",
+    "test": "vitest"
+  },
+  "author": "DataPond ( https://datapond.earth )",
+  "license": "C Licence",
+  "dependencies": {
+    "arweave": "^1.14.4",
+    "smartweave": "^0.4.49"
+  },
+  "devDependencies": {
+    "@datapond/commons": "latest"
+  }
+}

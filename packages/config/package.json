@@ -1,0 +1,22 @@
+{
+    "name": "@datapond/config",
+    "author": "decho",
+    "version": "1.0.0",
+    "description": "Configurations",
+    "license": "ISC",
+    "type": "module",
+    "exports": {
+        "./esbuild": {
+            "import": "./esbuild/index.js"
+        },
+        "./eslint/*.cjs": {
+            "require": "./eslint/*.cjs"
+        },
+        "./typescript/*.json": "./typescript/*.json"
+    },
+    "devDependencies": {
+        "esbuild": "^0.17.19",
+        "esbuild-postcss": "^0.0.4",
+        "fast-glob": "^3.2.12"
+    }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@datapond/contracts_ar",
+  "version": "0.1.0",
+  "description": "",
+  "sideEffects": false,
+  "type": "module",
+  "scripts": {
+    "build": "rm -rf out/node && mkdir -p out/contracts && node esbuild.js",
+    "export": "mkdir -p ../cli/contracts && cp -f ./out/node/versions.js ../cli/contracts/versions.src",
+    "check": "npx tsc --watch",
+    "lint": "npx eslint src/**/*.ts"
+  },
+  "files": [
+    "out/node"
+  ],
+  "exports": {
+    "./versions": {
+      "types": "./src/versions.ts",
+      "import": "./out/node/versions.js"
+    },
+    "./*": {
+      "types": "./src/*.ts",
+      "import": "./out/node/*.js"
+    }
+  },
+  "devDependencies": {
+    "@versioning-contract/commons": "*",
+    "arlocal": "^1.1.65"
+  },
+  "author": "DataPond ( https://datapond.earth )",
+  "license": "C Licence"
+}

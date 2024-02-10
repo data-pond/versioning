@@ -1,0 +1,27 @@
+{
+  "name": "@datapond/commons",
+  "version": "0.1.2",
+  "description": "Common files",
+  "type": "module",
+  "sideEffects": false,
+  "files": [
+    "out/node"
+  ],
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "import": "./out/node/index.js"
+    },
+    "./*": {
+      "types": "./src/*.ts",
+      "import": "./out/node/*.js"
+    }
+  },
+  "scripts": {
+    "build": "rm -rf out && node esbuild.js",
+    "check": "npx tsc --watch",
+    "lint": "npx eslint src/**/*.ts"
+  },
+  "author": "DataPond ( https://datapond.earth )",
+  "license": "C Licence"
+}

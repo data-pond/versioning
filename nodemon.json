@@ -1,0 +1,11 @@
+{
+    "watch": [
+        "/packages/**/*"
+    ],
+    "ignore": [
+        "/cache",
+        "/node_modules"
+    ],
+    "ext": "ts,tsx",
+    "verbose": false
+}
